@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/weather.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <ul class="navigation-list">
+                    <li class="active">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                        <span>Weather</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars"></i>
+                        <span>Cities</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map"></i>
+                        <span>Map</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Settings</span>
+                    </li>
+
+                </ul>
+
+
+
+            </nav>
+        </header>
+        <main>
+            <ul id="search-results">
+
+
+            </ul>
+            <input type="text" name="" id="search-city"
+                placeholder="search-city">
+            <div class="weather-today">
+                <div class="location-div">
+                    <div class="city-state">
+                        <h1 class="location">Hyderabad</h1>
+                        <span class="state"></span>
+                        <!-- Hex value for degree -->
+                    </div>
+                    <span class="temp-min">31.7&#xb0;</span>
+                </div>
+
+                <img class="weather-condition-icon" src="img/001-cloudy.svg"
+                    alt="partly cloudy" />
+
+            </div>
+
+
+            <div class="hourly-weather">
+                <span>today's Forecast</span>
+                <div class="time-period">
+
+                    <li class="loading">Loading...</li>
+
+                </div>
+
+
+            </div>
+            <div class="air-conditions">
+                <div class="air-condition-title">
+                    <span>air conditions</span>
+                    <a href=""><span id="see-more">see more</span></a>
+                </div>
+                <div class="conditions">
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span class="air-condition-type">real feel</span>
+                            </div>
+
+                            <span class="real-feel">30&#xb0;</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span class="air-condition-type">real feel</span>
+                            </div>
+                            <span class="wind">0.2km/h</span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span class="air-condition-type">real feel</span>
+                            </div>
+                            <span class="chance-rain"></span>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-temperature-quarter"></i>
+                                <span class="air-condition-type">real feel</span>
+                            </div>
+                            <span class="uv-index"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </main>
+        <div class="weather-week">
+            <h2 class="forecast-heading">7 day forecast</h2>
+            <ul class="weather-week-list">
+                <li class="loading">Loading...</li>
+
+            </ul>
+            
+        </div>
+        
+
+
+
+
+        <script src="js/weather.js"></script>
+    </body>
+</html>
